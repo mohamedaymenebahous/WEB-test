@@ -1,0 +1,81 @@
+float:left
+
+<hr>
+
+<cite> italic
+
+
+
+ <img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map> 
+
+
+
+ <map name="workmap">
+  <area shape="circle" coords="337,300,44" onclick="myFunction()">
+</map>
+
+
+
+
+javascript
+        <script>
+        function myFunction() {
+        alert("You clicked the coffee cup!");
+        }
+        </script> 
+
+
+
+         <script>
+        function myFunction() {
+        var x = document.getElementsByClassName("city");
+        for (var i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+         }
+        }
+        </script> 
+
+for different screen sizes
+<picture>
+  <source media="(min-width: 650px)" srcset="img_food.jpg">
+  <source media="(min-width: 465px)" srcset="img_car.jpg">
+  <img src="img_girl.jpg">
+</picture> 
+
+
+for different img types
+<picture>
+  <source srcset="img_avatar.png">
+  <source srcset="img_girl.jpg">
+  <img src="img_beatles.gif" alt="Beatles" style="width:auto;">
+</picture>
+
+
+space between td
+table {
+  border-spacing: 5px;
+}
+
+
+colspan="2"
+rowspan="2"
+
+
+
+#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+
+
+
+
+<iframe></iframe>
