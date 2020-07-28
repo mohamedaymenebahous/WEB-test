@@ -6,81 +6,36 @@
         <meta name="keywords" content="AI Technology Technicians HomoTechnical HealthCare Health Artificial Intelligence Medical Medicine">
         <meta name="author" content="Bahous Med Aymene">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>HomoTechnicus</title>
+        <title>Register</title>
         <link rel="stylesheet" type="text/css" href="../css/register.css" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
-    <body class="body">
-        <!--This is a test for my Project-->
-        <header class="header divTable1">
-            <a href="../Home.html"><img src="../img/index.png" id="logo" alt="HomoTechnical Logo"></a>
-            <span class="LoginandRegistrations">
-                <a href="../login/login.html"><button class="button">Log in</button></a>
-                <a href="register.html"><button class="button">Register</button></a>
-            </span>
-        </header>
-        <table class="Form">
-            <thead>
-                <tr>
-                    <td>
-                        <h3 id="text">
-                            Register
-                        </h3>
-                    </td>
-                </tr>
-            <tbody>
-                <tr>
-                    <td>
-                        <form>
-                            <label>Enter your full name</label>
-                            <br>
-                            <input class="name" type="text" placeholder="Full Name">
-                        </form>
-                    </td>
-                </tr>
-                <br>
-                <tr>
-                    <td>
-                        <form>
-                            <label>Enter your E-mail adress</label>
-                            <br>
-                            <input class="email" type="text" placeholder="Email Adress">
-                        </form>
-                    </td>
-                </tr>
-                <br>
-                <tr>
-                    <td>
-                        <form>
-                            <label>Create a password</label>
-                            <br>
-                            <input class="password" type="password" placeholder="Password"">
-                        </form>
-                    </td>
-                </tr>
-                <br>
-                <tr>
-                    <td>
-                        <form>
-                            <label>Confirm password</label>
-                            <br>
-                            <input class="password" type="password" placeholder="Confirm password"">
-                        </form>
-                    </td>
-                </tr>
-                <br>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td>
-                        <form>
-                            <button class="button1" type="submit">
-                                Submit
-                            </button>
-                        </form>
-                    </td>
-                </tr>
-            </tfoot>
-        </table>
-    </body>
-</html>
+    <div class="container">
+
+        <div class="inner">
+
+            <div class="left">
+                <a href="../Home.html"><img src="../img/index1.png" alt="Logo" class="logo"></a>
+                <div class="content">
+                    <h1>HomoTechnicus</h1>
+                    <p>Join us and post your latest ideas, contribute to projects, and help people around the world.</p>
+                    <p class="light">By joining us, you are becoming a family member of one of the biggest communities of, doctors, engineers and technicians, around the world.</p>
+                </div>
+            </div>
+
+            <div class="right">
+                <p class="register">Register</p>
+                <p class="paragraphs">What should we call you</p>
+                <input type="text" name="username" id="fullname" placeholder="Enter your full name">
+                <p class="paragraphs">What is your e-mail</p>
+                <input type="text" name="email" id="email" placeholder="Enter your e-mail">
+                <p class="paragraphs">Enter your password</p>
+                <input type="password" name="password" id="password" placeholder="Choose your password">
+                <p class="paragraphs">Confirm your password</p>
+                <input type="password" name="password" id="password" placeholder="Confirm your password">
+                <button>Register</button>
+                <p class="loginlink">Or click here to <a href="../login/login.html">Log in</a></p>
+            </div>
+        </div>
+    </div>

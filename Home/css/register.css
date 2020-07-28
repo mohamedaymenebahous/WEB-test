@@ -1,42 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&diplay=swap");
+
 body {
-    background-color: rgb(0, 0, 0);
     margin: 0;
-    color: rgb(255, 255, 255);
-    font-size: 15px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-header {
-    background-color: rgb(55, 252, 160);
-    width: 100%;
-    height: 45px;
-    color: rgb(32, 22, 94);
-    padding: 5px 5px 5px 5px;
-    margin: 0 auto;
-    display: inline-flex;
-    position: fixed;
-}
-.button {
-    background-color: rgb(55, 252, 160); /* Green */
-    border: none;
-    color: rgb(0, 0, 0);
-    padding: 10px 25px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    font-family: "Montserrat";
+    background: #EEEEEE;
     font-size: 16px;
+    height: 100vh;
 }
-.button:hover {
-    background-color: rgb(0, 11, 170);
-    color: rgb(255, 255, 255)
+
+.container {
+    margin: 0 auto;
+    text-align: center;
 }
-.LoginandRegistrations {
-    margin-left: 1010px;
-    margin-top: 4px;
+
+h1 {
+    margin: 1em 0;
 }
+
+p {
+    line-height: 1.7rem;
+}
+
+.left {
+    background: linear-gradient(160deg, #00ff95 0%, #8800ff 100%);
+    padding: 1em;
+}
+
+.left h1, p {
+    color: #ffffff;
+}
+
+.logo {
+    width: 120px;
+}
+
+.right p {
+    color: #000000;
+}
+
+.register {
+    padding: 2em 0 1em;
+}
+
+.paragraphs {
+    margin: 0;
+    padding: 0;
+}
+
+.loginlink{
+    padding: 2em 0 1em;
+}
+
+.light {
+    color: rgba(255, 255, 255,.7) !important;
+    margin-top: 2em;
+}
+
+input, button {
+    width: calc(100% - 3em);
+    padding: .5em;
+    font-size: 1rem;
+    outline: none;
+    margin: .5em;
+}
+
+button {
+    margin: 0;
+    background: linear-gradient(160deg, #00ff95 0%, #8800ff 100%);
+    color: #ffffff;
+    border: none;
+    margin-top: 1em;
+}
+
 a:link {
-    color: rgb(93, 104, 255);
+    color: #8800ff;
     background-color: transparent;
     text-decoration: none;
 }
@@ -50,62 +87,99 @@ a:active {
     background-color: transparent;
     text-decoration: none;
 }
-#logo {
-    height: 50px;
-    width: 90px;;
-    opacity: 100%;
-    margin-left: 10px;
+
+@media only screen and (min-width: 768px) {
+
+    body {
+        font-size: 20px;
+    }
+
+    button {
+        width: 60% !important;
+    }
+
+    input {
+        width: 60% !important;
+    }
+
+    .right {
+        text-align: center;
+        align-self: center;
+        padding: .5em 2em 0.5em;
+        justify-self: center;
+    }
+    .right p {
+        margin: 0;
+    }
 }
-#login{
-    color: rgb(32, 22, 94);
-    padding: 10px 10px 10px 10px;
-    margin: 25px 25px 25px 25px;
-}
-#register {
-    color: rgb(32, 22, 94);
-    padding: 10px 10px 10px 10px;
-    margin: 25px 25px 25px 25px;
-}
-.Form {
-    border-bottom: solid 5px rgb(55, 252, 160);
-    border-radius: 15px;
-    background-color: rgb(30, 30, 30);
-    text-align: left;
-    padding: 60px 200px 30px 200px;
-    margin: 75px 260px;
-    font-size: 20px;
-}
-.name {
-    height: 30px;
-    width: 400px;
-    margin-top: 5px;
-}
-.email {
-    height: 30px;
-    width: 400px;
-    margin-top: 5px;
-}
-.password {
-    height: 30px;
-    width: 400px;
-    margin-top: 5px;
-}
-.button1 {
-    background-color: rgb(0, 255, 136); /* Green */
-    border: none;
-    border-radius: 50px;
-    color: rgb(0, 0, 0);
-    padding: 10px 25px;
-    margin: 25px 25px 25px 303px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-.button1:hover {
-    background-color: rgb(0, 17, 250);
-    color: rgb(255, 255, 255)
-}
-#text {
-    text-align: left;
+
+@media only screen and (min-width: 1024px) {
+    
+    .logo {
+        margin: 1em 0;
+    }
+
+    p {
+        line-height: 1.7em !important;
+    }
+
+    .inner {
+        display: grid;
+        grid-template-columns: 55% auto;
+    }
+
+    
+    .left {
+        text-align: left;
+        padding: 0 2em;
+        height: 100vh;
+        display: grid;
+    }
+
+    .content {
+        padding: 0 3em;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 2.4em;
+    }
+
+    .right {
+        text-align: left;
+        align-self: center;
+        padding: 0 2em 1.5em;
+        justify-self: center;
+        margin-right: 170px;
+    }
+    .right p {
+        margin: 0;
+    }
+
+    .register {
+        padding: 2em 0 1em;
+        margin-bottom: 25px;
+    }
+    
+    .paragraphs {
+        margin: 0;
+        padding: 0;
+    }
+
+    input {
+        width: 170% !important;
+        margin: .5em 0;
+    }
+
+    button {
+        width: 170% !important;
+    }
+
+    .loginlink {
+        font-size: 15px;
+        margin-right: 25px;
+        margin-top: 15px;
+        text-align: right;
+        width: 169%;
+    }
 }
