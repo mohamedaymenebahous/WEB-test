@@ -44,7 +44,7 @@ p {
     margin-top: 2em;
 }
 
-input, button {
+input, .button {
     width: calc(100% - 3em);
     padding: .5em;
     font-size: 1rem;
@@ -52,7 +52,7 @@ input, button {
     margin: .5em;
 }
 
-button {
+.button {
     margin: 0;
     background: linear-gradient(160deg, #00ff95 0%, #8800ff 100%);
     color: #ffffff;
@@ -60,7 +60,7 @@ button {
     margin-top: 1em;
 }
 
-button:hover {
+.button:hover {
     background: linear-gradient(160deg, #8800ff 0%, #00ff95 100%);
     color: rgb(255, 255, 255)
 }
@@ -140,7 +140,7 @@ a:active {
         margin: .5em 0;
     }
 
-    button {
+    .button {
         width: 96% !important;
     }
 
