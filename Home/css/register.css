@@ -72,6 +72,11 @@ button {
     margin-top: 1em;
 }
 
+button:hover {
+    background: linear-gradient(160deg, #8800ff 0%, #00ff95 100%);
+    color: rgb(255, 255, 255)
+}
+
 a:link {
     color: #8800ff;
     background-color: transparent;
@@ -151,13 +156,14 @@ a:active {
         padding: 0 2em 1.5em;
         justify-self: center;
         margin-right: 170px;
+        width: 40%;
     }
     .right p {
         margin: 0;
     }
 
     .register {
-        padding: 2em 0 1em;
+        padding: 2em 0 2em;
         margin-bottom: 25px;
     }
     
@@ -181,5 +187,6 @@ a:active {
         margin-top: 15px;
         text-align: right;
         width: 169%;
+        padding: .50em 0 1em;
     }
 }

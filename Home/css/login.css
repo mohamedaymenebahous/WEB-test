@@ -60,6 +60,11 @@ button {
     margin-top: 1em;
 }
 
+button:hover {
+    background: linear-gradient(160deg, #8800ff 0%, #00ff95 100%);
+    color: rgb(255, 255, 255)
+}
+
 a:link {
     color: #8800ff;
     background-color: transparent;
@@ -141,7 +146,7 @@ a:active {
 
     .registerlink {
         font-size: 15px;
-        margin-top: 0;
+        margin-top: -25px;
         margin-right: 15px;
         text-align: right;
     }
